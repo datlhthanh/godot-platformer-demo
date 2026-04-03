@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ce0xqex552o11" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://dmaj0d6rttgb8" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://jyd7ctftqtf" path="res://scenes/kill_zone.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://bsvm7jqg8p5xd" path="res://scenes/slime.tscn" id="6_p57ef"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
 
@@ -419,3 +420,8 @@ position = Vector2(354, 36)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/Platform2" unique_id=956292270]
 libraries/ = SubResource("AnimationLibrary_iywne")
 autoplay = &"move"
+
+[node name="Enemies" type="Node" parent="." unique_id=1051617050]
+
+[node name="Slime" parent="Enemies" unique_id=1702959651 instance=ExtResource("6_p57ef")]
+position = Vector2(504, 53)
